@@ -1,10 +1,10 @@
-import Welcomeall from "./default";
-import Header from "./Header";
-import Welcome from"./class components";
-import Function1 from "./function1";
-import LifecycleDemo from "./lifecycle";
-import Button from "./state";
-import Example from "./useeffect";
+import Welcomeall from"./components/default"
+import Header from "./components/Header";
+import Welcome from "./components/class components";
+import Function1 from "./components/function1";
+import LifecycleDemo from "./components/lifecycle";
+import Button from "./components/state";
+import Example from "./components/useeffect";
 function App() {
   return (<div>
          <h1><LifecycleDemo/></h1>
