@@ -6,6 +6,7 @@ import LifecycleDemo from "./components/lifecycle";
 import Button from "./components/state";
 import Example from "./components/useeffect";
 import Greeting from "./components/ifcondition";
+import Counter from "./components/event";
 function App() {
   const userIsLoggedIn = false;
   return (<div>
@@ -18,12 +19,11 @@ function App() {
         <Welcomeall />
         <h1><Example/></h1>
          <h1><Button/></h1>
-         
+         <h1><Counter/></h1>
     <div>
       <Greeting isLoggedIn={userIsLoggedIn} />
     </div>
-  );
-}
+
          </div>
 
     
