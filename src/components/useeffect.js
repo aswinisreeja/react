@@ -1,22 +1,23 @@
 import React, { useState, useEffect } from 'react';
 
-function Example() {
+function Counters() {
   const [count, setCount] = useState(0);
-
+  
   useEffect(() => {
-    document.heading = `You clicked ${count} times`;
-  });
-
-  const incrementCount = () => {
-    setCount(prevCount => prevCount + 1);
-  };
+    document.title = `You clicked ${count} times`;
+    return () => {
+      console.log('Cleanup function executed');
+    };
+  }, [count]); 
 
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={incrementCount}>Click me</button>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
     </div>
   );
 }
 
-export default Example;
+export default Counters;
